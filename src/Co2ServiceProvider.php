@@ -2,9 +2,9 @@
 
 namespace Ahoicloud\Co2;
 
+use Ahoicloud\Co2\Commands\Co2Command;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Ahoicloud\Co2\Commands\Co2Command;
 
 class Co2ServiceProvider extends PackageServiceProvider
 {
