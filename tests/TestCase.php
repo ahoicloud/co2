@@ -2,9 +2,9 @@
 
 namespace Ahoicloud\Co2\Tests;
 
+use Ahoicloud\Co2\Co2ServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Ahoicloud\Co2\Co2ServiceProvider;
 
 class TestCase extends Orchestra
 {
