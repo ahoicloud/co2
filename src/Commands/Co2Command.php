@@ -16,7 +16,8 @@ class Co2Command extends Command
         $bytes=$this->ask('How many bytes?');
         $co2=new Co2();
         $result=$co2->energyPerByteByComponent($bytes);
-        $this->info('Result'. $result);
+        $this->info('Result');
+        $this->info($result);
         return self::SUCCESS;
     }
 }
