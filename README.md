@@ -17,13 +17,6 @@ You can install the package via composer:
 composer require ahoicloud/co2
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="co2-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
@@ -34,20 +27,27 @@ This is the contents of the published config file:
 
 ```php
 return [
+
+    'KWH_PER_GB' => 0.81,
+    'END_USER_DEVICE_ENERGY' => 0.52,
+    'NETWORK_ENERGY' => 0.14,
+    'DATACENTER_ENERGY' => 0.15,
+    'PRODUCTION_ENERGY' => 0.19,
+    'GLOBAL_GRID_INTENSITY' => 442,
+    'RENEWABLES_GRID_INTENSITY' => 50,
+    'FIRST_TIME_VIEWING_PERCENTAGE' => 0.75,
+    'RETURNING_VISITOR_PERCENTAGE' => 0.25,
+    'PERCENTAGE_OF_DATA_LOADED_ON_SUBSEQUENT_LOAD' => 0.02,
+
 ];
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="co2-views"
-```
 
 ## Usage
 
 ```php
 $co2 = new Ahoicloud\Co2();
-echo $co2->echoPhrase('Hello, Ahoicloud!');
+echo $co2->energyPerByteByComponent($byte);
 ```
 
 ## Testing

@@ -54,9 +54,9 @@ class Co2
    * Accept an object keys by the different system components, and
    * return an object with the co2 figures key by the each component
    *
-   * @param  energyByComponent - energy grouped by the four system components
-   * @param  [carbonIntensity] - carbon intensity to apply to the datacentre values
-   * @return  the total number in grams of CO2 equivalent emissions
+   * @param array $energyByComponent - energy grouped by the four system components
+   * @param boolean $carbonIntensity[] - carbon intensity to apply to the datacentre values
+   * @return array the total number in grams of CO2 equivalent emissions
    */
   public function co2byComponent($energyByComponent, $carbonIntensity = false)
   {
@@ -95,9 +95,9 @@ class Co2
      * fetched from, a different carbon intensity figure
      * is applied for the datacentre share of the carbon intensity.
      *
-     * @param  bytes - the data transferred in bytes
-     * @param  `carbonIntensity` the carbon intensity for datacentre (average figures, not marginal ones)
-     * @return  the total number in grams of CO2 equivalent emissions
+     * @param  $bytes - the data transferred in bytes
+     * @param  boolean $carbonIntensity the carbon intensity for datacentre (average figures, not marginal ones)
+     * @return float|null the total number in grams of CO2 equivalent emissions
      */
     public function perByte($bytes, $carbonIntensity = false, $segmentResults = false, $options = [])
     {
@@ -112,8 +112,7 @@ class Co2
 
         $co2ValuesbyComponent = $this->co2byComponent(
             $energyBycomponent,
-            $carbonIntensity,
-            $options
+            $carbonIntensity
         );
 
         // pull out our values…
