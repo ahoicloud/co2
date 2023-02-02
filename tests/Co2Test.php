@@ -24,4 +24,3 @@ it('should return a single number for CO2 emissions', function () {
     $co2 = new Co2();
     expect($co2->perByte(2257715.2))->toBeNumeric();
 });
-
