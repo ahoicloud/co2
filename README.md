@@ -1,11 +1,14 @@
-# This packge calculates co2 per byte
+# This package for laravel calculates Co2 emission for data
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ahoicloud/co2.svg?style=flat-square)](https://packagist.org/packages/ahoicloud/co2)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ahoicloud/co2/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ahoicloud/co2/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ahoicloud/co2/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ahoicloud/co2/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ahoicloud/co2.svg?style=flat-square)](https://packagist.org/packages/ahoicloud/co2)
 
-Uvery byte of data that’s uploaded or downloaded produces CO2 cost. By being able to calculate these emissions, developers can enabled themself and their user to create more efficient, lower carbon decisions.
+Every byte of data that’s uploaded or downloaded produces CO2. By being able to calculate these emissions, developers can enabled themself and their users to create more efficient, lower carbon decisions. Here are a few examples:
++ Create a carbon budget for your site
++ Inform the user when they uploading or downloading carbon intensive files
+
 
 The package uses the yearly average grid intensity data from [Ember](https://ember-climate.org/data/data-explorer/), as well as marginal intensity data from the [UNFCCC](https://unfccc.int/) (United Nations Framework Convention on Climate Change).
 
