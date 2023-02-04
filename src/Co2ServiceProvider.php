@@ -18,8 +18,6 @@ class Co2ServiceProvider extends PackageServiceProvider
         $package
             ->name('co2')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_co2_table')
             ->hasCommand(Co2Command::class);
     }
 }

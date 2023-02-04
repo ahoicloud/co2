@@ -10,7 +10,7 @@ class Co2
 
     /**
      * Accept a figure for bytes transferred and return an object representing
-     * the share of the total enrgy use of the entire system, broken down
+     * the share of the total energy use of the entire system, broken down
      * by each corresponding system component
      * Gets emission by Sustainable Web Design
      *   https://sustainablewebdesign.org/calculating-digital-emissions/.
@@ -97,6 +97,7 @@ class Co2
      *
      * @param    $bytes - the data transferred in bytes
      * @param  bool  $carbonIntensity the carbon intensity for datacentre (average figures, not marginal ones)
+     * @param  bool  $segmentResults the result should return as segmentet 
      * @return float|null|array the total number in grams of CO2 equivalent emissions
      */
     public function perByte($bytes, $carbonIntensity = false, $segmentResults = false, $options = [])

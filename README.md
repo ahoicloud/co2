@@ -51,12 +51,42 @@ return [
 
 
 ## Usage
-
+### Total energy use by each corresponding system component in kilowatt hours
 ```php
 $co2 = new Ahoicloud\Co2();
 echo $co2->energyPerByteByComponent($byte);
 ```
+Or as a facade
 
+```php
+use Ahoicloud\Co2\Facades\Co2;
+echo Co2::energyPerByteByComponent($byte);
+```
+
+
+### Total co2 figures key by the each component
+```php
+$co2 = new Ahoicloud\Co2();
+echo $co2->co2byComponent($byte);
+```
+Or as a facade
+
+```php
+use Ahoicloud\Co2\Facades\Co2;
+echo Co2::co2byComponent($byte);
+```
+
+### Total co2 figures key by the each component
+```php
+$co2 = new Ahoicloud\Co2();
+echo $co2->perByte($byte);
+```
+Or as a facade
+
+```php
+use Ahoicloud\Co2\Facades\Co2;
+echo Co2::perByte($byte);
+```
 ## Testing
 
 ```bash
