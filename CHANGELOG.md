@@ -2,6 +2,12 @@
 
 All notable changes to `co2` will be documented in this file.
 
+## v1.0.2 - 2023-02-04
+
+Just adjusting the descriptions of composer.json and README.md
+
+**Full Changelog**: https://github.com/ahoicloud/co2/compare/v1.0.1...v1.0.2
+
 ## v1.0.1 - 2023-02-04
 
 ##Updated
