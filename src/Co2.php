@@ -97,7 +97,7 @@ class Co2
      *
      * @param    $bytes - the data transferred in bytes
      * @param  bool  $carbonIntensity the carbon intensity for datacentre (average figures, not marginal ones)
-     * @return float|null the total number in grams of CO2 equivalent emissions
+     * @return float|null|array the total number in grams of CO2 equivalent emissions
      */
     public function perByte($bytes, $carbonIntensity = false, $segmentResults = false, $options = [])
     {
@@ -120,7 +120,7 @@ class Co2
         $co2ValuesSum = $co2Values->sum();
 
         if ($segmentResults) {
-            return null;
+            return collect($co2Values)->merge(['total' => $co2ValuesSum])->all();
         }
 
         return $co2ValuesSum;
