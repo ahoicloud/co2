@@ -5,7 +5,11 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ahoicloud/co2/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ahoicloud/co2/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ahoicloud/co2.svg?style=flat-square)](https://packagist.org/packages/ahoicloud/co2)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Uvery byte of data that’s uploaded or downloaded produces CO2 cost. By being able to calculate these emissions, developers can enabled themself and their user to create more efficient, lower carbon decisions.
+
+The package uses the yearly average grid intensity data from [Ember](https://ember-climate.org/data/data-explorer/), as well as marginal intensity data from the [UNFCCC](https://unfccc.int/) (United Nations Framework Convention on Climate Change).
+
+The package is build for Laravel and heavy inspired by [thegreenwebfoundation/co2.js](https://github.com/thegreenwebfoundation/co2.js)
 
 
 
@@ -76,3 +80,11 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+The code for CO2.js is licensed Apache 2.0. ([What does this mean?](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)))
+
+The average carbon intensity data from Ember is published under the Creative Commons ShareAlike Attribution Licence ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)). ([What does this mean?](https://tldrlegal.com/license/creative-commons-attribution-sharealike-4.0-international-(cc-by-sa-4.0)))
+
+The marginal intensity data is published by the Green Web Foundation, under the Creative Commons ShareAlike Attribution Licence ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)). ([What does this mean?](https://tldrlegal.com/license/creative-commons-attribution-sharealike-4.0-international-(cc-by-sa-4.0)))
+
+See LICENCE for more.
