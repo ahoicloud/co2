@@ -84,7 +84,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-The code for CO2.js is licensed Apache 2.0. ([What does this mean?](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)))
+The code for [thegreenwebfoundation/co2.js](https://github.com/thegreenwebfoundation/co2.js) is licensed Apache 2.0. ([What does this mean?](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)))
 
 The average carbon intensity data from Ember is published under the Creative Commons ShareAlike Attribution Licence ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)). ([What does this mean?](https://tldrlegal.com/license/creative-commons-attribution-sharealike-4.0-international-(cc-by-sa-4.0)))
 
