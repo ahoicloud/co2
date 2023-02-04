@@ -39,7 +39,7 @@ it('should return a array for CO2 emissions', function () {
 
     expect($co2->energyPerByteByComponent(2257715.2))->toBeArray();
 });
-it("returns a CO2 number for data transfer", function () {
+it('returns a CO2 number for data transfer', function () {
     $co2 = new Co2();
     expect(number_format($co2->perByte(MILLION), 5))->toBe(number_format(MILLION_GREY, 5));
 });
@@ -49,19 +49,19 @@ it("returns a lower CO2 number for data transfer from domains using entirely 'gr
     expect(number_format($co2->perByte(MILLION, true), 5))->toBe(number_format(MILLION_GREEN, 5));
 });
 
-it("returns adjusted data center and total emissions for when green, other values remain the same as grey", function () {
+it('returns adjusted data center and total emissions for when green, other values remain the same as grey', function () {
     $co2 = new Co2();
-    $co2_result_segements=$co2->perByte(MILLION,true,true);
-    
+    $co2_result_segements = $co2->perByte(MILLION, true, true);
+
     expect(number_format($co2_result_segements['consumerDeviceCO2'], 5))->toBe(number_format(MILLION_GREY_DEVICES, 5));
     expect(number_format($co2_result_segements['dataCenterCO2'], 6))->toBe(number_format(MILLION_GREEN_DATACENTERS, 6));
     expect(number_format($co2_result_segements['total'], 5))->toBe(number_format(MILLION_GREEN, 5));
 });
 
-it("returns an object with devices, networks, data centers, and production emissions shown separately, as well as the total emissions", function () {
+it('returns an object with devices, networks, data centers, and production emissions shown separately, as well as the total emissions', function () {
     $co2 = new Co2();
-    $co2_result_segements=$co2->perByte(MILLION,false,true);
-    
+    $co2_result_segements = $co2->perByte(MILLION, false, true);
+
     expect(number_format($co2_result_segements['consumerDeviceCO2'], 5))->toBe(number_format(MILLION_GREY_DEVICES, 5));
     expect(number_format($co2_result_segements['dataCenterCO2'], 5))->toBe(number_format(MILLION_GREY_DATACENTERS, 5));
     expect(number_format($co2_result_segements['networkCO2'], 5))->toBe(number_format(MILLION_GREY_NETWORKS, 5));
