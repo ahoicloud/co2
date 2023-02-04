@@ -106,7 +106,7 @@ class Co2
         // otherwise when faced with non numeric values throw an error
         if (! is_bool($carbonIntensity)) {
             throw new Exception(
-                `perByte expects a boolean for the carbon intensity value. Received: ${carbonIntensity}`
+                'perByte expects a boolean for the carbon intensity value. Received: '.$carbonIntensity
             );
         }
 
