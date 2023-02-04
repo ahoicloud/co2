@@ -1,6 +1,6 @@
 {
     "name": "ahoicloud/co2",
-    "description": "This packge calculates co2 per byte",
+    "description": "Package for laravel calculating Co2 emission based on Sustainable Web Design (SWD) model",
     "keywords": [
         "ahoicloud",
         "laravel",

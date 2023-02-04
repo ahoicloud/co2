@@ -1,4 +1,4 @@
-# This package for laravel calculates Co2 emission for data
+# Package for Laravel calculating Co2 emission based on Sustainable Web Design (SWD) model
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ahoicloud/co2.svg?style=flat-square)](https://packagist.org/packages/ahoicloud/co2)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ahoicloud/co2/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ahoicloud/co2/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -9,10 +9,11 @@ Every byte of data that’s uploaded or downloaded produces CO2. By being able t
 + Create a carbon budget for your site
 + Inform the user when they uploading or downloading carbon intensive files
 
+The package uses the [Sustainable Web Design (SWD)](https://sustainablewebdesign.org/calculating-digital-emissions) model.
+The yearly average grid intensity data comes from [Ember](https://ember-climate.org/data/data-explorer/), as well as marginal intensity data from the [UNFCCC](https://unfccc.int/) (United Nations Framework Convention on Climate Change).
 
-The package uses the yearly average grid intensity data from [Ember](https://ember-climate.org/data/data-explorer/), as well as marginal intensity data from the [UNFCCC](https://unfccc.int/) (United Nations Framework Convention on Climate Change).
 
-The package is build for Laravel and heavy inspired by [thegreenwebfoundation/co2.js](https://github.com/thegreenwebfoundation/co2.js)
+The package is build for [Laravel](https://github.com/laravel/framework) and is based on the great  work done by [The Green Web Foundation](https://thegreenwebfoundation.org) in the  [CO2.js](https://github.com/thegreenwebfoundation/co2.js) package.
 
 
 
@@ -23,6 +24,8 @@ You can install the package via composer:
 ```bash
 composer require ahoicloud/co2
 ```
+
+### Optional 
 
 You can publish the config file with:
 
